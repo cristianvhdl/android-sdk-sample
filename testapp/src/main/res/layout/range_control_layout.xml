@@ -11,65 +11,78 @@ limitations under the License.
 -->
 
 <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/range_control"
-        android:visibility="gone"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:layout_width="wrap_content" android:layout_height="match_parent">
+    android:id="@+id/range_control"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal"
+    android:visibility="gone">
 
     <FrameLayout
-            android:layout_alignParentLeft="true"
-            android:layout_marginRight="12dp"
-            android:layout_width="wrap_content" android:layout_height="match_parent">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:id="@+id/temp_cool_up"
-                  android:text="+"
-                  android:textSize="@dimen/control_temp_size"
-                  android:padding="@dimen/control_padding"
-                  android:layout_gravity="top|center_horizontal"
-                  android:textColor="@color/white"/>
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="12dp">
+        <TextView
+            android:id="@+id/temp_cool_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:padding="@dimen/control_padding"
+            android:text="@string/increase_temp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/control_temp_size" />
 
         <TextView
-                android:id="@+id/current_cool_temp"
-                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textSize="@dimen/temp_text_size"
-                android:textColor="@color/white"/>
+            android:id="@+id/current_cool_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/temp_text_size" />
 
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:id="@+id/temp_cool_down"
-                  android:padding="@dimen/control_padding"
-                  android:text="-"
-                  android:textSize="@dimen/control_temp_size"
-                  android:layout_gravity="bottom|center_horizontal"
-                  android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/temp_cool_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="@dimen/control_padding"
+            android:text="@string/decrease_temp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/control_temp_size" />
     </FrameLayout>
 
     <FrameLayout
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content" android:layout_height="match_parent">
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:id="@+id/temp_heat_up"
-                  android:text="+"
-                  android:textSize="@dimen/control_temp_size"
-                  android:padding="@dimen/control_padding"
-                  android:layout_gravity="top|center_horizontal"
-                  android:textColor="@color/white"/>
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/temp_heat_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:padding="@dimen/control_padding"
+            android:text="@string/increase_temp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/control_temp_size" />
 
         <TextView
-                android:id="@+id/current_heat_temp"
-                android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textSize="@dimen/temp_text_size"
-                android:textColor="@color/white"/>
+            android:id="@+id/current_heat_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/temp_text_size" />
 
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                  android:id="@+id/temp_heat_down"
-                  android:padding="@dimen/control_padding"
-                  android:text="-"
-                  android:textSize="@dimen/control_temp_size"
-                  android:layout_gravity="bottom|center_horizontal"
-                  android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/temp_heat_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:padding="@dimen/control_padding"
+            android:text="@string/decrease_temp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/control_temp_size" />
     </FrameLayout>
 </LinearLayout>

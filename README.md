@@ -1,14 +1,27 @@
-# Android NestDK
+# Nest Android SDK sample app
 
-Android sample code using the Nest Firebase APIs and Nest oauth implementation.  This sample code also includes an Android wrapper library that abstracts the redirect URL authentication flow and Firebase APIs to create native Java objects to represent Thermostats, Structures and Smoke/CO alarms. To get started you'll need a Nest developer account and register a client.  When registering the client be sure to select the redirect URL authentication flow and select any URL of your choice. Be sure to update the Constants.java file within the testapp module with the client id, client secret and redirect URL respectively.
+> Sample Android app showcasing how to use the [Nest Android SDK][nest-sdk].
 
-## Building
+[nest-sdk]: https://github.com/nestlabs/android-sdk
 
-The project can be imported through Android Studio or Intellij by selecting File > Import Project and selecting the build.gradle file within the NestSamples directory
+## Installation
+
+Clone this repository:
+
+```sh
+git clone git@github.com:nestlabs/android-sdk-sample.git
+```
+
+Import the project into Android Studio by selecting File > New > Import Project and selecting the
+directory you cloned above.
+
+Modify the `Constants.java` file to contain your Nest Product's client id, client secret 
+and redirect URL. If you don't do this, you will receive an error message after running.
 
 ## Running
 
-After importing the application, select 'run' and select any Android emulator or device that is running API level 14 (Ice Cream Sandwich, Android 4.0) or greater.
+After importing the application, click 'Run' and select any Android emulator or device that is 
+running API level 14 (Ice Cream Sandwich, Android 4.0) or greater.
 
 ## Contributing
 

@@ -13,7 +13,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="thermostat_radius">250dp</dimen>
-    <dimen name="temp_text_size">60dp</dimen>
-    <dimen name="control_temp_size">45dp</dimen>
-    <dimen name="control_padding">15dp</dimen>
+    <dimen name="temp_text_size">35sp</dimen>
+    <dimen name="control_temp_size">35sp</dimen>
+    <dimen name="control_padding">15sp</dimen>
 </resources>
